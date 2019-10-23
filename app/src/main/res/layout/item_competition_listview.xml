@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="50dp">
-<TextView
-    android:id="@+id/text_competition_listview"
+    android:layout_height="120dp"
+    android:orientation="horizontal">
+<LinearLayout
     android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    android:text="dd"/>
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:gravity="center">
+<ImageView
+    android:id="@+id/iv_team1"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/ic_launcher_background"
+    android:scaleType="centerCrop"/>
+<TextView
+    android:id="@+id/tv_team1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="team1"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="0dp"
+    android:layout_weight="3"
+    android:orientation="vertical"
+    android:gravity="center">
+<TextView
+    android:id="@+id/tv_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="第五场比赛 A组 2号场地"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-06-16 09:30"/>
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="0 - 0"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_team2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/tv_team2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="team2"/>
+    </LinearLayout>
 </LinearLayout>

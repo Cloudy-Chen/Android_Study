@@ -15,10 +15,10 @@ import java.util.List;
 public class CompetitionAdapter extends BaseAdapter {
 
     private Context context;
-    private ArrayList dataList;
+    private ArrayList<Competition> dataList;
     private LayoutInflater mInflater;
 
-    public CompetitionAdapter(Context context,ArrayList dataList) {
+    public CompetitionAdapter(Context context,ArrayList<Competition> dataList) {
         this.context = context;
         this.dataList = dataList;
         mInflater = LayoutInflater.from(context);
