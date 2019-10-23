@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+    <com.sdu.chy.chytest.myView.myAnimation.PositionView
+        android:id="@+id/position_view_animation"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+    />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/my_animation_view1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/Red"/>
+
+    <ImageView
+        android:id="@+id/my_animation_view2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/Red"
+        android:alpha="0.5"/>
+
+    <ImageView
+        android:id="@+id/my_animation_view3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/Red"
+        android:alpha="0.5"/>
+
+    <ImageView
+        android:id="@+id/my_animation_view4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/Red"
+        android:alpha="0.5"/>
+
+    <ImageView
+        android:id="@+id/my_animation_view5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/Red"
+        android:alpha="0.5"/>
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:layout_margin="5dp">
+
+    <Button
+        android:id="@+id/rotate_btn"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="旋转"/>
+
+    <Button
+        android:id="@+id/alpha_btn"
+        android:layout_toRightOf="@id/rotate_btn"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="渐变"/>
+
+    <Button
+        android:id="@+id/set_btn"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/alpha_btn"
+        android:text="组合"/>
+
+    <Button
+        android:id="@+id/tremble_btn"
+        android:layout_toRightOf="@id/set_btn"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="抖动"/>
+
+    <Button
+        android:id="@+id/shadow_btn"
+        android:layout_below="@id/rotate_btn"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="影子"/>
+
+    <Button
+        android:id="@+id/color_change_btn"
+        android:layout_toRightOf="@id/shadow_btn"
+        android:layout_alignBottom="@id/shadow_btn"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="颜色变化"/>
+
+</RelativeLayout>
+
+</LinearLayout>
+

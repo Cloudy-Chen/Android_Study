@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.sdu.chy.chytest"
+        minSdkVersion rootProject.ext.appMinSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName_okgo
+
+        ndk {
+            //.so文件 Linux下动态链接库(同windows下dll文件)，二进制文件，多用于NDK开发.用户拿到动态库和头文件说明，就可以使用动态库中function
+            moduleName "hello_jni"//对应本地代码文件，生成.so文件：lib+moduleName.so
+//            abiFilters "x86","armeabi", "armeabi-v7a"//CPU类型
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        sourceSets {
+            main {
+                jni.srcDirs = []
+                jniLibs.srcDirs = ['libs', 'src/main/libs']
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:23.3.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'cz.msebera.android:httpclient:4.3.6'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okio:okio:1.14.0'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.android.support:recyclerview-v7:23.3.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.android.support:support-v4:23.3.0'
+    implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.1'
+    implementation 'com.android.support:design:23.3.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+}
+
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    buildToolsVersion '27.0.3'
+}

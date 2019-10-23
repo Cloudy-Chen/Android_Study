@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/white">
+
+    <!--行的布局文件-->
+    <RelativeLayout
+        android:id="@+id/layout_goods_of_others_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <!--图标-->
+        <ImageView
+            android:id="@+id/img_goods_of_others"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/img_goods_of_others"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_goods_of_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="123"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/description_goods_of_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:text="123"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/publisher_goods_of_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:singleLine="true"
+            android:text="123"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+        <!--详情按钮-->
+        <TextView
+            android:id="@+id/tv_goods_detail"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/Orange"
+            android:gravity="center"
+            android:text="详情"
+            android:textColor="@android:color/white"/>
+
+        <!--删除按钮-->
+        <TextView
+            android:id="@+id/tv_goods_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/Red"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@android:color/white"/>
+
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

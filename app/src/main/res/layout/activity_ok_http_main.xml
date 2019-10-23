@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.sdu.chy.chytest.okHttptest.OkHttpMainActivity">
+        <Button
+            android:id="@+id/btn_post_get"
+            android:text="get_post请求"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp" />
+        <Button
+            android:id="@+id/btn_img"
+            android:text="图片请求"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btn_json"
+            android:text="解析json"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btn_send"
+            android:text="发送json"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btn_file_download"
+            android:text="简单文件下载"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btn_file_upload"
+            android:text="简单文件上传"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"/>
+
+</LinearLayout>

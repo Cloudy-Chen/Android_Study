@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sdu.chy.chytest">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DialActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity2" />
+        <activity android:name=".LoginActivity3" />
+        <activity android:name=".sqlite.SqliteActivity" />
+        <activity android:name=".HttpUrlConnectionNews.NewsActivity" />
+        <activity android:name=".HttpUrlConnectionLogin.LoginNetActivity" />
+        <activity android:name=".HttpClientLogin.LoginHttpClientActivity" />
+        <activity android:name=".asyncHttpClient.LoginAsyncHttpClientActivity" />
+        <activity android:name=".UploadFile.UploadFileActivity" />
+        <activity android:name=".UploadAndDownloadFile.UploadDownloadFileActivity" />
+        <activity android:name=".okHttptest.OkHttpMainActivity" />
+        <activity android:name=".okHttptest.OkgoPostGetActivity" />
+        <activity android:name=".okHttptest.OkgoImageActivity" />
+        <activity android:name=".okHttptest.OkHttpJsonActivity" />
+        <activity android:name=".LazyList.LazyListActivity" />
+        <activity android:name=".okHttptest.OkgoSendActivity" />
+        <activity android:name=".okHttptest.OkgoDownloadActivity" />
+        <activity android:name=".okHttptest.OkgoUploadActivity" />
+        <activity android:name=".recyclerViewTest.RecyclerViewActivity" />
+        <activity android:name=".myView.myViewUtils.MyViewActivity" />
+        <activity android:name=".myView.myAnimation.MyAnimationActivity" />
+        <activity android:name=".ndkTest.JniTestActivity" />
+        <activity android:name=".fragment.FragmentTestActivity" />
+        <activity android:name=".interview.eventbus.EventBusTestActivity" />
+        <activity android:name=".interview.competition.CompetitionActivity" />
+    </application>
+
+</manifest>

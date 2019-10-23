@@ -1,0 +1,9 @@
+Compiled from "chy.java"
+class Math {
+  public static final java.lang.Integer CONSTANT_1;
+  public static java.lang.Object obj;
+  Math();
+  public int math();
+  public static void main(java.lang.String[]);
+  static {};
+}
